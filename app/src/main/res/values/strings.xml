@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Server</string>
+    <string name="notification_channel_name">Server Xizmati</string>
+    <string name="notification_channel_desc">Server orqa fonda uzluksiz ishlashini ta'minlaydi</string>
+</resources>
