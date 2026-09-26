@@ -28,7 +28,7 @@ import java.net.Inet4Address
 import java.net.NetworkInterface
 
 class KtorServerEngine(
-    private val context: Context,
+    private val appContext: Context,
     private val powerManagerHelper: PowerManagerHelper
 ) {
     private var engine: ApplicationEngine? = null
@@ -94,7 +94,7 @@ class KtorServerEngine(
                 val clientIp = call.request.local.remoteHost
                 ServerLogManager.log("[$clientIp] GET / - 200 OK (Web Dashboard)", LogType.INFO)
                 try {
-                    val htmlContent = context.assets.open("web/index.html").use { it.readBytes().toString(Charsets.UTF_8) }
+                    val htmlContent = appContext.assets.open("web/index.html").bufferedReader(Charsets.UTF_8).use { it.readText() }
                     call.respondText(htmlContent, ContentType.Text.Html)
                 } catch (e: Exception) {
                     call.respondText("Web Dashboard yuklanmadi: ${e.message}", ContentType.Text.Plain, HttpStatusCode.InternalServerError)
