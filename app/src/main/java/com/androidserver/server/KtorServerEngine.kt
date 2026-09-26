@@ -94,7 +94,7 @@ class KtorServerEngine(
                 val clientIp = call.request.local.remoteHost
                 ServerLogManager.log("[$clientIp] GET / - 200 OK (Web Dashboard)", LogType.INFO)
                 try {
-                    val htmlContent = context.assets.open("web/index.html").bufferedReader().use { it.readText() }
+                    val htmlContent = context.assets.open("web/index.html").use { it.readBytes().toString(Charsets.UTF_8) }
                     call.respondText(htmlContent, ContentType.Text.Html)
                 } catch (e: Exception) {
                     call.respondText("Web Dashboard yuklanmadi: ${e.message}", ContentType.Text.Plain, HttpStatusCode.InternalServerError)
