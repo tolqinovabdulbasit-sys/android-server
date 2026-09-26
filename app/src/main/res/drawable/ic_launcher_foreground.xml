@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Server Qutisi 1 (Yuqori) -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M34,32 h40 c2.2,0 4,1.8 4,4 v8 c0,2.2 -1.8,4 -4,4 h-40 c-2.2,0 -4,-1.8 -4,-4 v-8 c0,-2.2 1.8,-4 4,-4 Z"/>
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M38,40 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M46,40 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+    <!-- Server Qutisi 2 (O'rta) -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M34,50 h40 c2.2,0 4,1.8 4,4 v8 c0,2.2 -1.8,4 -4,4 h-40 c-2.2,0 -4,-1.8 -4,-4 v-8 c0,-2.2 1.8,-4 4,-4 Z"/>
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M38,58 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M46,58 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+    <!-- Server Qutisi 3 (Pastki) -->
+    <path
+        android:fillColor="#4338CA"
+        android:pathData="M34,68 h40 c2.2,0 4,1.8 4,4 v8 c0,2.2 -1.8,4 -4,4 h-40 c-2.2,0 -4,-1.8 -4,-4 v-8 c0,-2.2 1.8,-4 4,-4 Z"/>
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M38,76 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+    <path
+        android:fillColor="#EC4899"
+        android:pathData="M46,76 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+    <!-- Chaqmoq / Quvvat belgisi -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M66,48 L58,62 L64,62 L60,74 L72,58 L66,58 Z"/>
+</vector>
